@@ -832,7 +832,7 @@
       // move top offset by an ascent
       offsets.textTop += (this._fontAscent ? ((this._fontAscent / 5) * this.lineHeight) : 0);
 
-		console.log('fabric.IText.toSvg()', offsets);
+	  console.log('fabric.IText.toSvg()', offsets);
 
       this._wrapSVGTextAndBg(markup, textAndBg, shadowSpans, offsets);
 
