@@ -1177,7 +1177,18 @@
       return fabric.util.object.extend(this.callSuper('toObject', propertiesToInclude), {
         styles: clone(this.styles)
       });
-    }
+    },
+
+	  toSVG = function(){
+		  var top = this.top;
+		  this.top -= this.fontSize + this.lineHeight;
+
+		  var svg = this.callSuper('toSVG');
+
+		  this.top = top;
+
+		  return svg;
+	  }
   });
 
   /**
