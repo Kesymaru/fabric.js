@@ -1179,7 +1179,7 @@
       });
     },
 
-	  toSVG = function(){
+	  toSVG: function(){
 		  var top = this.top;
 		  this.top -= this.fontSize + this.lineHeight;
 
